@@ -1,0 +1,12 @@
+{
+  name: "Lemon HackerNews Tutorial"
+  prod: {
+    hostname: 'hackernews.lemonjs.org'
+  }
+  dev: {
+    port: 3000
+  }
+  deploy: {
+    service: 'github'
+  }
+}

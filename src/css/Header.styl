@@ -1,0 +1,61 @@
+@import 'variables.styl'
+
+#header
+  background-color $orange
+  height 55px
+  left 0
+  position fixed
+  right 0
+  top 0
+  z-index 999
+
+  .inner
+    box-sizing border-box
+    margin 0 auto
+    max-width 800px
+    padding 15px 5px
+
+  a
+    color hsla(0,0%,100%,.8)
+    display inline-block
+    font-weight 300
+    letter-spacing .075em
+    line-height 24px
+    margin-right 1.8em
+    transition color .15s ease
+    vertical-align middle
+    &:hover
+      color #fff
+    &.active
+      border-bottom 1px solid white
+      color #fff
+      font-weight 400
+    &:nth-child(6)
+      margin-right 0
+
+  .github
+    color #fff
+    float right
+    font-size .9em
+    margin 0
+    float right
+
+  .logo
+    width 24px
+    margin-right 10px
+    display inline-block
+    vertical-align middle
+
+@media (max-width: 860px)
+  .header .inner
+    padding 15px 30px
+
+@media (max-width: 600px)
+  .header .inner
+    padding 15px
+
+  .header a
+    margin-right 1em
+
+  .header .github
+    display none
